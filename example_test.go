@@ -1,15 +1,17 @@
-package steps
+package steps_test
 
 import (
 	"fmt"
+
+	"github.com/mantyr/steps"
 )
 
 // Перечень попыток
 // Используются для хранения нескольких наборов шагов в одном тестовом сценарии
 const (
-	First Attempt = "first"
-	Second Attempt = "second"
-	Other Attempt = "other"
+	First steps.Attempt = "first"
+	Second steps.Attempt = "second"
+	Other steps.Attempt = "other"
 )
 
 // Перечень названий тестовых сценариев
@@ -23,19 +25,19 @@ type TestName string
 
 // Перечень шагов которые можно использовать в тестовом сценарии
 const (
-	Step1 Step = "step1"
-	Step2 Step = "step2"
+	Step1 steps.Step = "step1"
+	Step2 steps.Step = "step2"
 )
 
 // Перечень значений которые можно использовать в шагах
 const (
-	StatusOK Value = "OK"
-	StatusError Value = "ERROR"
-	StatusWait Value = "WAIT"
+	StatusOK steps.Value = "OK"
+	StatusError steps.Value = "ERROR"
+	StatusWait steps.Value = "WAIT"
 )
 
 func ExampleNewSteps() {
-	tests := NewTests()
+	tests := steps.NewTests()
 
 	tests.Get(Recipient1).Set(First).
 		Set(Step1, StatusOK).
