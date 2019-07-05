@@ -13,7 +13,7 @@ This don't stable version
 
 ### Example
 
-[![GoDoc](https://godoc.org/github.com/mantyr/steps?status.png)](http://godoc.org/github.com/mantyr/steps#example-Steps)
+[![GoDoc](https://godoc.org/github.com/mantyr/steps?status.png)](http://godoc.org/github.com/mantyr/steps#example-NewSteps)
 
 ## Author
 
