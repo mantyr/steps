@@ -34,7 +34,7 @@ const (
 	StatusWait Value = "WAIT"
 )
 
-func ExampleSteps() {
+func ExampleNewSteps() {
 	tests := NewTests()
 
 	tests.Get(Recipient1).Set(First).
